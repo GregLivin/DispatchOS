@@ -26,7 +26,8 @@
         </div>
       </section>
 
-      <footer className="text-center text-neutral-600 text-sm py-10">Independent carriers keep their own authority. We just get you the work.</footer>
+      <footer className="text-center text-neutral-600 text-sm py-10">Independent carriers keep their own authority. We just get you the work.<br /><a href="/DispatchOS/owner-login" className="text-neutral-700 hover:text-neutral-500">Dispatcher login</a></footer>
     </main>
   );
 }
+
