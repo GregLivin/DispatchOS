@@ -5,7 +5,10 @@
         <p className="text-sm uppercase tracking-widest text-indigo-400 mb-4">DispatchOS</p>
         <h1 className="text-4xl sm:text-5xl font-bold mb-6">Dispatch, automated.</h1>
         <p className="text-lg text-neutral-300 mb-10">We find the loads, negotiate the rates, and handle the paperwork, so you can focus on driving. Built for independent truck owners who want consistent work without doing the hunting themselves.</p>
-        <a href="mailto:123greglivin@gmail.com?subject=I want to talk about dispatching" className="inline-block bg-indigo-500 hover:bg-indigo-400 text-white font-semibold px-8 py-4 rounded-full transition">Get Dispatched</a>
+        <div className="flex gap-4 justify-center flex-wrap">
+          <a href="/DispatchOS/signup" className="inline-block bg-indigo-500 hover:bg-indigo-400 text-white font-semibold px-8 py-4 rounded-full transition">Become a Carrier</a>
+          <a href="/DispatchOS/ship" className="inline-block bg-neutral-800 hover:bg-neutral-700 text-white font-semibold px-8 py-4 rounded-full transition">Need Trucks?</a>
+        </div>
       </section>
 
       <section className="max-w-4xl mx-auto px-6 py-16 grid gap-6 sm:grid-cols-3">
