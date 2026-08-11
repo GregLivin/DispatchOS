@@ -1,11 +1,11 @@
 ﻿"use client";
-import { useState } from "react";
+import { useState, FormEvent, ChangeEvent } from "react";
 
 export default function ShipperSignUp() {
   const [submitted, setSubmitted] = useState(false);
   const [company, setCompany] = useState("");
 
-  function handleSubmit(e) {
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setSubmitted(true);
   }
@@ -27,7 +27,7 @@ export default function ShipperSignUp() {
         <h1 className="text-3xl font-bold mb-2">Need Trucks?</h1>
         <p className="text-neutral-400 mb-8">Tell us about your freight and we will match you with an available carrier in our network. This is a demo form, nothing is stored yet.</p>
         <form onSubmit={handleSubmit} className="space-y-4">
-          <input required onChange={(e) => setCompany(e.target.value)} placeholder="Company name" className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-sm" />
+          <input required onChange={(e: ChangeEvent<HTMLInputElement>) => setCompany(e.target.value)} placeholder="Company name" className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-sm" />
           <input required placeholder="Contact name" className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-sm" />
           <input required type="tel" placeholder="Phone number" className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-sm" />
           <input required type="email" placeholder="Email" className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-4 py-3 text-sm" />
